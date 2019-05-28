@@ -1,0 +1,168 @@
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+  }
+
+  /*
+   * Sidebar
+   */
+  
+  .sidebar {
+    width: 16rem;
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    /* margin-top:40px;  */
+    /* box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1); */
+    transition: all 0.6s;
+    background: #242a33;
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  
+  
+  .sidebar .nav-link {
+    font-weight: 300;
+    font-size: 90%;
+    color: rgb(138, 138, 138);;
+  }
+  
+
+  .sidebar .nav-link .feather,
+  .sidebar .nav-link .fas,
+  .sidebar .nav-link .fa {
+    margin-right: 4px;
+    /* color: #999; */
+    color: #fff;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #007bff;
+  }
+  
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+  
+  
+
+
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+  
+  /*
+   * Content
+   */
+  
+  [role="main"] {
+    padding-top: 70px!important;
+    min-height: calc(100vh);
+    margin-left: 16rem!important;
+    background: #f4f6f9!important;
+    transition: all 0.6s;
+  }
+
+.collapseBar {
+      width: 5rem;
+      font-size: 0!important;
+      /* background: rgb(22, 22, 22)!important; */
+}
+
+.collapseBar span,
+.collapseBar h6 {
+  font-size: 0!important;
+}
+
+.navCollapse {
+  margin-left: 5rem!important;
+}
+
+.collapseBar .sidebar-heading {
+  margin-right: 13px!important;
+  color: #fff!important;
+}
+
+
+.collapseBar .feather {
+  height: 20px;
+  width: 20px;
+}
+
+
+.collapseBar #cerrarSesion {
+  display: flex;
+  margin: -5px;
+}
+
+
+
+.collapseBar .nav-link {
+    padding: 14px 20px 10px 30px;
+    
+}
+
+  .collapseBar__main {
+    margin-left: 5rem!important;
+}
+
+
+
+/* Scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(53, 53, 53); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+.profile__background {
+  height: 170px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../views/img/profileBackground.jpg);
+  background-size: auto;
+  /* background-position: center; */
+  background-attachment: fixed;
+  /* padding: 20px; */
+  font-size: 90%!important;
+}
+
+
+.little-profile2 .pro-img2 {
+  margin-bottom: 5px;
+  padding: 20px 0 5px  0;
+}
+
+.little-profile2 .pro-img2 img {
+  width: 60px!important;
+  height: 60px!important;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+}

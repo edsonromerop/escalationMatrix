@@ -1,0 +1,10 @@
+#Impedir el listado de contenidos de un directorio
+
+Options All -Indexes
+
+
+# Url Amigables reglas de escritura para que no se vean las urls en la barra de dirección
+
+RewriteEngine On
+
+RewriteRule ^([-a-zA-Z0-9/]+)$ index.php?ruta=$1

@@ -1,0 +1,574 @@
+/*  Imported Plugins */
+
+@import url('https://fonts.googleapis.com/css?family=Jaldi');
+@import url('https://fonts.googleapis.com/css?family=Dosis:200|Rajdhani:300|Source+Sans+Pro:300|Sarabun:200');
+
+/*  General Styles */
+
+html,
+body {
+  font-family: 'Sarabun', sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #000;
+  background: #f4f6f9!important;
+}
+
+
+.bg-primary {
+  background: #258eff!important;
+}
+
+.bg-dark-blue {
+  background: #0d6ed6!important;
+}
+
+.bg-darker-blue {
+  background: #034286!important;
+}
+
+.bg-light {
+  background: #fafafa!important;
+}
+
+.bg-grey {
+  background: #dfdfdf!important;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+
+
+
+.logo__anim {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px!important;
+}
+
+.login__container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+
+.refresh__pass {
+  color: rgba(255, 255, 255, 0.747);
+}
+
+.form-signin {
+  min-width: 330px;
+  padding: 18px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 20%;
+}
+
+.wfmLogo {
+  font-family: 'Rajdhani';
+}
+
+
+.fade__out {
+  opacity: 0;
+}
+
+.fade__in {
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 15px;
+  background: transparent;
+  color: #fff;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input {
+    margin: 10px 0;
+    background: transparent;
+}
+
+.form-signin input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff!important;
+}
+
+.form-signin .btn {
+  margin: 10px 0;
+  color: rgb(172, 87, 17);
+  border: none;
+}
+
+.bg-custom {
+  background: rgb(243, 243, 243)!important;
+}
+
+
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  height: 30px;
+}
+
+
+.navbar {
+  margin-left: 16rem;
+  transition: all 0.6s;
+}
+
+
+.nav-text {
+  color: #797979!important;
+}
+
+#sidebarCollapse {
+  padding-top: 5px;
+}
+
+
+
+.start-dash {
+  height: 25px!important;
+  width: 25px!important;
+}
+
+
+.card__people {
+  right: 10px;
+  top: 25px;
+  position: absolute;
+  height: 50px!important;
+  width: 50px!important;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+
+.card__title {
+  font-size: 50px!important;
+  margin-bottom: 0!important;
+}
+
+.card__content {
+  color: #fff;
+}
+
+.card {
+  margin-top: 15px!important;
+}
+
+.card__link {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+.error__404 {
+  line-height: 1px;
+}
+
+.error__404 h1 {
+  margin-top: -50px;
+  font-size: 7rem;
+}
+
+.img__404 {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  height: 300px;
+  width: 300px;
+}
+
+
+
+.img__Form {
+    width: 100px!important;
+    height: 100px!important;
+    margin: 0 auto!important;
+}
+
+
+.card__percent {
+  right: 90px;
+  top: 44px;
+  position: absolute;
+  font-size: 120%!important;
+}
+
+
+.active {
+  border-left: 4px solid #dc3545;
+  color: rgb(255, 255, 255)!important;
+  /* background: rgb(49, 49, 49); */
+  font-weight: bold!important;
+}
+
+
+.menu__link:hover {
+  transform: translateX(20px);
+  border-left: 3px solid #dc3545!important;
+  background: rgb(82, 82, 82);
+  color: #e0e0e0!important;
+  transition-duration: 0.4s; 
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  margin-top: 10px;
+  height: 1px; /* Specified height */
+  background: #e4e4e4; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.65; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  border-radius: 50%;
+  background: #007bff; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+#particles-js { 
+  background: rgb(26, 26, 26); 
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../views/img/loginBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#particlesContent-js {
+  height: 100vh;
+}
+
+
+#particlesContent-js .welcome__msg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  font-size: 120%;
+}
+
+
+.alert__style {
+  margin-top: 210px!important;
+}
+
+
+
+.exportExcel{
+  position: absolute!important;
+  top: -51px!important;
+  padding: 5px!important;
+  cursor: pointer!important;
+}
+
+
+
+/*=====================================================================*/
+
+
+
+
+
+.menuBtn {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  margin: 5px;
+  list-style: none;
+}
+
+.bar__content {
+  position: absolute;
+  height: 100%;
+  width:300px;;
+  background: rgba(196, 196, 196, 0.774);
+}
+
+
+table {
+  font-weight: 200;
+}
+
+
+
+table tbody tr td {
+  color: rgb(122, 122, 122);
+}
+
+
+
+.tipo__novedad {
+  position: absolute;
+  top: 29%;
+  left: -10%;
+  color: #fff;
+  font-size: 160%;
+}
+
+.uga__card {
+  padding: 8px 3px 3px 20px;
+  transition: 0.4s;
+}
+
+.uga__card:hover {
+  background: rgba(88, 88, 88, 0.096);
+  opacity: 0.95;
+}
+
+
+
+
+
+.inp__busNovedad input {
+  text-align: center;
+  font-size: 120%;
+}
+
+
+
+.badge-mark {
+  padding: 0;
+  border: 2px solid;
+  width: .5rem;
+  height: .5rem;
+  border-radius: 100px;
+}
+
+.border-blue {
+  border-color: #03a9f4;
+}
+
+.badge-mark:empty {
+  display: inline-block;
+}
+
+.data__nov {
+    position: absolute;
+    margin-top: 7px;
+    background: #fff;
+    color: #313131;
+}
+
+
+.icon__card {
+  height: 45px!important;
+  width: 45px!important;
+}
+
+
+
+/* 
+input,
+select,
+#btn__novUga {
+  border-radius: 25px!important;
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+} */
+
+.img__logo {
+  margin: 0 auto;
+  height: 10px;
+  width: 10px;
+}
+
+
+.card__nomina {
+  height: 600px;
+}
+
+
+
+.chart__content{
+  position: absolute;
+  top: 29%;
+  font-weight: bold;
+  font-size: 300%;
+  background: red;
+  width: 100%;
+}
+
+
+.table__nomina,
+.table__nomina thead th,
+.table__nomina td  {
+  border: none!important;
+}
+
+
+
+.table__nomina thead th {
+  padding: 15px 0 0 15px;
+}
+
+
+.table__nomina td  {
+  font-size: 150%;
+  font-weight: 200;
+  padding: 0 0 15px 15px;
+}
+
+.fc-view-container {
+  background: #fff!important;
+}
+
+
+.profile__card {
+  border: none;
+  border-radius: 0;
+  background: #fff;
+  height: 600px;
+}
+
+.profile__cardNomina {
+  border: none;
+  border-radius: 0;
+  background: #fff;
+}
+
+.profile__card .card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  color: #455a64;
+}
+
+.little-profile .pro-img {
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.little-profile .pro-img img {
+  width: 100px!important;
+  height: 100px!important;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+}
+
+
+.table__profile tr,
+.table__profile td {
+  border: none;
+}
+
+
+.msg-body {
+  background: #ffffff;
+  padding: 15px;
+  font-size: 14px;
+  position: relative;
+  border: 0.5px solid rgb(231, 231, 231);
+  
+}
+
+.msg-item {
+  margin-bottom: 20px;
+}
+
+#tablaNominaContainer {
+  margin-top: -3rem;
+}
+
+
+.load-refresh-animate {
+  -animation: spin .6s infinite linear;
+  -webkit-animation: spin2 .6s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+  0% {
+    -webkit-transform: scale(0.85);
+      transform: scale(0.85);
+  }
+
+  50% {
+      opacity: 1;
+  }
+}
+
+@keyframes spin {
+ 0% {
+    -webkit-transform: scale(0.85);
+      transform: scale(0.85);
+  }
+
+  50% {
+      opacity: 1;
+  }
+}
+
+.bg-yellow {
+  background: rgb(255, 238, 0)!important;
+}
+
+.text-yellow {
+  color: rgb(255, 187, 0)!important;
+}
+
+
+.test {
+  color: rgb(224, 49, 49);
+  color: rgb(250, 114, 24);
+  color: rgb(224, 183, 49);
+}
+
+
+
+
+
+
+.card-2 {
+  box-shadow: 0 3px 3px rgba(0,0,0,0.1), 0 3px 3px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ececec;
+  transition: 0.5s;
+}
+
+.card-2:hover {
+  background: rgb(243, 243, 243);
+  transform: scale(1.05);
+}
+
+.file {
+  display: block;  
+}
